@@ -10,7 +10,7 @@ import { required, email } from 'vuelidate/lib/validators';
 Vue.use(Vuelidate)
 const touchMap = new WeakMap()
 
-new Vue({
+const subscribe = new Vue({
   el: '#app',
   delimiters: ["((","))"],
   data: { 
@@ -78,4 +78,6 @@ new Vue({
     },
   },
 });
+
+
 

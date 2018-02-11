@@ -18,6 +18,7 @@
     }, {
       "score": 1.5,
       "heading": "6ヶ月プラン",
+      "isRecommended": true,
       "product": {
         "id": "1_0.5_6",
         "period": 6,
@@ -60,6 +61,7 @@
     }, {
       "score": 2,
       "heading": "6ヶ月プラン",
+      "isRecommended": true,
       "product": {
         "id": "1_1_6",
         "period": 6,
