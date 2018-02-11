@@ -1,5 +1,5 @@
 ---
-title: "入手困難な極上日本酒に、<br>毎月出会おう"
+title: "美味しい日本酒の定期便（頒布会）"
 hero:
   subtitle: 'こだわったのは<span class="primary">「美味しさ」</span>と<span class="primary">「希少性」</span>。<br>日本酒ソムリエ厳選の極上セレクションが、<br>月々2,980円から。今なら、<span class="primary">送料ずっと無料</span>。<br>安心の<span class="primary">全額返金保証</span>付き。'
   image: "/img/home/hero/001"
