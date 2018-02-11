@@ -11,7 +11,7 @@
 
   </div>
   <div class="w-100 ph2-l mb5">
-    <div class="lazyload aspect-ratio aspect-ratio--1x1 cover mb3" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-medium.jpg [--medium] | {{.image}}-large.jpg"></div>
+    <div class="blur-up lazyload aspect-ratio aspect-ratio--1x1 cover mb3" style="background-image: url({{.image}}-lqip.jpg)" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-medium.jpg [--medium] | {{.image}}-large.jpg"></div>
   </div>
   <div class="mhn1-l ph3 pt3 pb4 center mw9">
     {{ range .contents }}
@@ -33,7 +33,7 @@
           <div class="flex flex-wrap mhn2">
             {{range .items}}
               <div class="w-50 ph2">
-                <div class="lazyload aspect-ratio aspect-ratio--16x9 cover mb3" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-large.jpg"></div>
+                <div class="blur-up lazyload aspect-ratio aspect-ratio--16x9 cover mb3" style="background-image: url({{.image}}-lqip.jpg)" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-large.jpg"></div>
               </div>
             {{ end }}
           </div>

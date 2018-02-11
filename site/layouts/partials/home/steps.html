@@ -10,7 +10,7 @@
       {{ range .items }}
         <div class="ph2-ns w-33-ns mb4">
           
-          <div class="lazyload aspect-ratio aspect-ratio--16x9 cover mb3" data-bg="{{.image}}-small.jpg"></div>
+          <div class="blur-up lazyload aspect-ratio aspect-ratio--16x9 cover mb3" style="background-image: url({{.image}}-lqip.jpg)" data-bg="{{.image}}-small.jpg"></div>
           <h3 class="b lh-title mb2 f4">{{.heading|safeHTML}}</h3>
           <p class="f6">{{.text}}</p>
           {{with .button}}<a href="{{.url}}" class="b no-underline bb pb1 bw1">{{.text}}</a>{{ end }}

@@ -25,7 +25,7 @@
       </div>
       {{ range .items }}
         <div class="mb3 w-25-l ph2-l">
-          <div class="lazyload aspect-ratio aspect-ratio--16x9 cover mb3" data-bg="{{.image}}"></div>
+          <div class="blur-up lazyload aspect-ratio aspect-ratio--16x9 cover mb3" style="background-image: url({{.image}}-lqip.jpg)" data-bg="{{.image}}.jpg"></div>
           <h3 class="lh-title b mb2">{{.heading}}</h3>
           <div class="f6 lh-copy">{{.text|safeHTML}}</div>
         </div>
