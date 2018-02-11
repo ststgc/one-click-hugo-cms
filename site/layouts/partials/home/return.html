@@ -1,0 +1,31 @@
+<div class="pv4">
+  <div class="ph3 mw9 center">
+    <div class="mw9">
+      <div class="ph2-l mb5">
+        {{with .leader}}<div class="f5 b lh-title mb2">{{.|safeHTML}}</div>{{end}}
+        <h2 class="f2 b lh-title mb2">{{.heading|safeHTML}}</h2>
+        <p>{{.text|safeHTML}}</p>
+        <div class="tl-l tc mb5 mt4">
+          <a href="/subscribe" class="btn raise">お試しセットを購入する</a>
+        </div>
+        <h3 class="f6 grey-3 b mb2">{{ .caption }}</h3>
+        <div class="mw7">
+          <div class="flex flex-wrap">
+            {{range .items}}
+            <div class="w-50-l pr2-l mb3">
+              <div class="f6 lh-copy grey-3">
+                {{ . }}
+              </div>
+            </div>
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 ph2-l">
+      <div class="lazyload aspect-ratio aspect-ratio--16x9 cover mb3" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-medium.jpg [--medium] | {{.image}}-large.jpg"></div>
+    </div>
+
+
+  </div>
+</div>

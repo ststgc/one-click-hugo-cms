@@ -1,13 +1,14 @@
 <head>
 
-	<title>{{ .Title }} | Kaldi</title>
+	<title>{{ .Title }} | saketaku</title>
 	<link rel="stylesheet" href="/css/main.css" />
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+
+	<link async rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp.min.css">
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -23,5 +24,17 @@
 	<meta property="og:url" content="/">
 	<meta property="og:image" content="/img/og-image.jpg">
 
-	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<!-- Yotpo -->
+	<script type="text/javascript">
+	(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/ll6NIsvNfEZRWovqNqpTdfiR0xi01Os0NVDvyXWS/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+	</script>
+
+	<!-- FOMO -->
+	<script type="text/javascript" src="https://www.usefomo.com/api/v1/k7uLcXkOEAv2z4jTImrggw/load.js" async></script>
+
+	<!-- autopilot -->
+	<script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="9fedbc58c81746fc8c00332d2ded46a4fbaef813d95b4341863b47d9b50f874c",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
+
+	
+
 </head>

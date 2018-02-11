@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{ partial "jumbotron" (dict "title" .Title "subtitle" .Params.subtitle) }}
+
+<div class="mw7 center ph3 pt4">
+  <div class="bb b--grey-2 pb5 mb5">
+    {{with .Params.mission}}
+      <h3 class="lh-title f3 mb3 b">{{.heading|safeHTML}}</h3>
+      <div class="b">{{.text|safeHTML}}</div>
+    {{end}}
+  </div>
+  <div class="bb b--grey-2 mb5">
+    {{ range .Params.values }}
+      <h3 class="lh-title f3 b mb3">{{ .heading|safeHTML }}</h3>
+      <div class="b mb5">{{.text|safeHTML}}</div>
+    {{ end }}
+  </div>
+
+  {{ with .Params.message }}
+    <h3 class="lh-title f3 b mb5">{{ .heading|safeHTML }}</h3>
+  {{ end }}
+  <div class="b mb5">{{ .Content }}</div>
+  
+
+</div>
+
+{{ end }}

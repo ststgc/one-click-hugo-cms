@@ -1,7 +1,7 @@
 {
-  "name": "victor-hugo",
-  "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+  "name": "saketaku",
+  "version": "0.3",
+  "description": "saketaku",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -38,6 +38,7 @@
     "gulp-replace": "^0.5.4",
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.6.5",
+    "lazysizes": "^4.0.1",
     "netlify-cms": "^1.0.2",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^11.0.0",
@@ -46,6 +47,9 @@
     "react": "15.6.1",
     "uncss": "^0.14.1",
     "url-loader": "^0.5.7",
+    "vue": "^2.5.13",
+    "vue-router": "^3.0.1",
+    "vuelidate": "^0.6.1",
     "webpack": "^3.0.0",
     "whatwg-fetch": "^1.0.0"
   },

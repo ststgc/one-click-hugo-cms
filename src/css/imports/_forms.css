@@ -26,11 +26,11 @@ input, textarea {
   &:focus {
     background-color: var(--white);
   }
-  &:focus + label {
+/*   &:focus + label {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(-120%);
-  }
+  } */
 }
 
 ::-webkit-input-placeholder {
@@ -57,7 +57,7 @@ input, textarea {
    line-height: normal;
 }
 
-label
+/* label
 {
   font-size: .875rem;
   font-weight: 800;
@@ -74,3 +74,4 @@ label
   transition: var(--hover-transition);
   z-index: 2;
 }
+ */

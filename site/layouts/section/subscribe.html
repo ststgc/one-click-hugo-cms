@@ -1,0 +1,439 @@
+{{ define "main" }}
+
+<style>
+  .progbar div[data-index='0'] {
+    width: 25%;
+  }
+  .progbar div[data-index='1'] {
+    width: 50%;
+  }
+  .progbar div[data-index='2'] {
+    width: 75%;
+  }
+  .progbar div[data-index='3'] {
+    width: 100%;
+  }
+
+  #form_select_plan button.btn {
+  }
+  #form_select_plan button.btn.valid {
+    background: rgba(136, 186, 13, 1);
+    color: #fff;
+    opacity: 1;
+  }
+
+  @keyframes rand {
+    2% {
+      transform: translateY(1px);
+    }
+    4% {
+      transform: translateY(3px);
+    }
+    6% {
+      transform: translateY(6px);
+    }
+    8% {
+      transform: translateY(1px);
+    }
+    10% {
+      transform: translateY(9px);
+    }
+    12% {
+      transform: translateY(5px);
+    }
+    14% {
+      transform: translateY(3px);
+    }
+    16% {
+      transform: translateY(2px);
+    }
+    18% {
+      transform: translateY(2px);
+    }
+    20% {
+      transform: translateY(1px);
+    }
+    22% {
+      transform: translateY(10px);
+    }
+    24% {
+      transform: translateY(3px);
+    }
+    26% {
+      transform: translateY(3px);
+    }
+    28% {
+      transform: translateY(6px);
+    }
+    30% {
+      transform: translateY(6px);
+    }
+    32% {
+      transform: translateY(2px);
+    }
+    34% {
+      transform: translateY(10px);
+    }
+    36% {
+      transform: translateY(10px);
+    }
+    38% {
+      transform: translateY(7px);
+    }
+    40% {
+      transform: translateY(6px);
+    }
+    42% {
+      transform: translateY(6px);
+    }
+    44% {
+      transform: translateY(6px);
+    }
+    46% {
+      transform: translateY(5px);
+    }
+    48% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(2px);
+    }
+    52% {
+      transform: translateY(2px);
+    }
+    54% {
+      transform: translateY(3px);
+    }
+    56% {
+      transform: translateY(1px);
+    }
+    58% {
+      transform: translateY(1px);
+    }
+    60% {
+      transform: translateY(2px);
+    }
+    62% {
+      transform: translateY(10px);
+    }
+    64% {
+      transform: translateY(8px);
+    }
+    66% {
+      transform: translateY(4px);
+    }
+    68% {
+      transform: translateY(10px);
+    }
+    70% {
+      transform: translateY(6px);
+    }
+    72% {
+      transform: translateY(4px);
+    }
+    74% {
+      transform: translateY(10px);
+    }
+    76% {
+      transform: translateY(7px);
+    }
+    78% {
+      transform: translateY(4px);
+    }
+    80% {
+      transform: translateY(4px);
+    }
+    82% {
+      transform: translateY(4px);
+    }
+    84% {
+      transform: translateY(1px);
+    }
+    86% {
+      transform: translateY(10px);
+    }
+    88% {
+      transform: translateY(5px);
+    }
+    90% {
+      transform: translateY(2px);
+    }
+    92% {
+      transform: translateY(8px);
+    }
+    94% {
+      transform: translateY(6px);
+    }
+    96% {
+      transform: translateY(7px);
+    }
+    98% {
+      transform: translateY(7px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  .jump-animation:nth-child(1) {
+    animation-delay: -0.15s;
+  }
+
+  .jump-animation:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  .jump-animation:nth-child(3) {
+    animation-delay: -0.45s;
+  }
+
+  .jump-animation:nth-child(4) {
+    animation-delay: -0.6s;
+  }
+
+  .jump-animation:nth-child(5) {
+    animation-delay: -0.75s;
+  }
+
+  .jump-animation:nth-child(6) {
+    animation-delay: -0.9s;
+  }
+
+  .jump-animation:nth-child(7) {
+    animation-delay: -1.05s;
+  }
+
+  .jump-animation:nth-child(8) {
+    animation-delay: -1.2s;
+  }
+
+  .jump {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    will-change: transform;
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(0%);
+    background-color: rgba(136, 186, 13, 1);
+    z-index: 999;
+  }
+  .jump-text {
+    font-weight: bold;
+    color: #fff;
+  }
+  .loaded .jump {
+    transform: translateX(-100%);
+  }
+  .jump-animation {
+    display: inline-block;
+    font-weight: bold;
+    animation: rand 10s linear infinite alternate;
+  }
+  .loaded .jump-animation {
+    animation-play-state: paused;
+  }
+
+</style>
+
+
+<div class="ph3 mb5 pb6">
+  <div class="center mw7 pv3">
+
+    <div id="app">
+      <div class="jump flex items-center justify-center">
+        <div class="jump-text">
+          <span class="jump-animation">s</span>
+          <span class="jump-animation">a</span>
+          <span class="jump-animation">k</span>
+          <span class="jump-animation">e</span>
+          <span class="jump-animation">t</span>
+          <span class="jump-animation">a</span>
+          <span class="jump-animation">k</span>
+          <span class="jump-animation">u</span>
+        </div>
+      </div>
+      <div class="progbar absolute top-0 left-0 right-0">
+        <div style="height:0.3rem" class="bg-primary" v-bind:data-index="questionIndex"></div>
+      </div>
+      <div v-for="(question, index) in questions.questions">
+        <div v-show="index === questionIndex">
+          <h2 class="b f3 tc mb3">
+            <span class="f6 grey-3 db mb1">
+              ステップ ((index+1)) / ((questions.questions.length))
+            </span>
+            (( question.heading ))
+            <span v-if="question.plan" class="f6 grey-3 db mb1">
+              ご希望のプランをカートに入れてください
+            </span>
+            <span v-if="question.register" class="f6 grey-3 db mb1">
+              お疲れ様です、あともう少しで完了です。
+            </span>
+          </h2>
+          <div v-if="!question.plan || !question.register" class="flex-m justify-center flex-wrap mb3">
+            <div v-for="response in question.responses" class="ph2-m mb2 w-33-m">
+              <div class="bg-grey-1 br1 tc-m relative raise">
+                <div class="absolute w-100 h-100 z-5">
+                  <input v-bind:value="response.score"
+                         v-bind:name="index"
+                         v-model="plan_scores[index]"
+                         v-on:click="next"
+                         type=radio
+                         v-bind:id="((response.id))" 
+                         class="dn"
+                         >
+                  <label v-bind:for="(( response.id ))" class="db absolute absolute--fill pointer"></label>
+                </div>
+                <div class="pa3 flex flex-column-m items-center justify-between">
+                  <div class="w4 mb3-m">
+                    <img v-bind:src="((response.image))" alt="">
+                  </div>
+                  <div class="pl3 pl0-m w-100">
+                    <h3 class='b f5 lh-title mb2'>
+                      ((response.heading))
+                    </h3>
+                    <p class='f6 lh-title mb0'>
+                      ((response.text))
+                    </p>
+                  </div>
+                  <div class="dn-m">></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-if="question.plan"
+               class="flex-m justify-center flex-wrap mb3">
+            <div class="ph2-m mb2 w-33-m relative" v-for="choise in plans.choises">
+              <div class="pa3 flex flex-column-m items-center justify-between bg-grey-1 br1 tc-l raise pointer" v-if="choise.score === total">
+                <div class="absolute w-100 h-100 z-5">
+                  <input v-bind:value="choise.product.url"
+                         v-bind:name="index"
+                         v-model="plan_selected_url"
+                         v-on:click="next"
+                         type="radio"
+                         v-bind:id="(( question.id ))" 
+                         class="dn"
+                         >
+                  <label v-bind:for="(( question.id ))" class="db absolute absolute--fill pointer"></label>
+                </div>
+                
+                <div class="w5 tc-ns">
+                  <h3 class="b f5 lh-title mb2 ">(( choise.heading ))</h3>
+                </div>
+                <ul class="w-100">
+                  <li class='f6 bb b--grey-2 pv2 lh-solid'>
+                    初回
+                    <span class="b f4 mh1">
+                      (( choise.product.price.first | moneyDelimiter ))
+                    </span>
+                    円（税抜）
+                  </li>
+                  <li v-if="choise.product.price.second"
+                      class='f6 bb b--grey-2 pv2 lh-solid'>
+                    2回目
+                    <span class="b f5 mh1">(( choise.product.price.second | moneyDelimiter ))</span>
+                    円（税抜）
+                  </li>
+                  <li class='f6 pv2 lh-solid'>
+                    以降
+                    <span class="b f5 mh1">(( choise.product.price.base | moneyDelimiter ))</span>
+                    円（税抜）
+                  </li>
+                  <li v-if='choise.product.price.second === null'
+                      class='f6 bt b--grey-2 pv2 lh-solid'>
+                      お届け1回分
+                      <span class="b f5 mh1">
+                        (( choise.product.price.first / (choise.product.period * choise.product.frequency) | moneyDelimiter ))
+                      </span>
+                      円（税抜）
+                  </li>
+                  <li class='f6 mt3'>
+                    <div class="lh-title pb2 b">今だけのキャンペーン特典</div>
+                    1. <span class="b lh-title">送料ずっと無料！*</span><br>
+                    2. 合計
+                    <span v-if="choise.product.price.second"
+                          class="b lh-title">
+                      (( 
+                        choise.product.price.base - choise.product.price.first +
+                        choise.product.price.base - choise.product.price.second 
+                         | moneyDelimiter
+                       ))
+                    </span>
+                    <span v-else
+                          class="b lh-title">
+                      (( 
+                        choise.product.price.base - choise.product.price.first
+                         | moneyDelimiter
+                       ))
+                    </span>
+                    円割引き
+                  </li>
+                </ul>
+                <div class="dn-m pl3">></div>
+              </div>
+            </div>
+          </div>
+          <div v-if="question.register"
+               class="mb3">
+            <div class="mw6-ns ph5-ns pv3-l pa3 center bg-grey-1 br1">
+              
+              <form id="form_select_plan" v-bind:data-plan="(( plan_selected_url ))">
+                <div class="mhn1-l mw-100 center">
+                  <!-- Name -->
+                  <div class="mb3">
+                    <fieldset>
+                      <label class="f6 grey-3 lh-copy" for="name">お名前（必須、名字だけで構いません）</label>
+                      <input 
+                        type="text" 
+                        id="name"
+                        v-model.trim="name" 
+                        @input="delayTouch($v.name)"
+                        placeholder="名前を入力する"
+                        class="w-100 mb2">
+                      <span class="f6 primary b" v-if="!$v.name.required">お名前は必須です</span>
+                    </fieldset>
+                  </div>
+                  <!-- Email -->
+                  <div class="mb3">
+                    <fieldset>
+                      <label class="f6 grey-3 lh-copy" for="email">メールアドレス（必須）</label>
+                      <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        v-model.trim="email" 
+                        v-bind:input="delayTouch($v.email)"
+                        placeholder="メールアドレスを入力する" 
+                        class="w-100 mb2">
+                      <span class="f6 primary b" v-if="!$v.email.required">メールアドレスは必須です</span>
+                      <span class="f6 primary b" v-if="!$v.email.email">メールアドレスに不備があります</span>
+                    </fieldset>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="tc mw5-l center">
+                  <button 
+                    type="submit"
+                    v-on:click="submit"
+                    class="btn w-100 o-30"
+                    v-bind:class="{error: $v.name.$error, valid: $v.name.$dirty && !$v.name.$invalid}">
+                    仮登録をしてカートへ進む</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div class="ph2-l lh-copy f6 grey-3 tc">((question.caption))</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{{ end }}

@@ -1,0 +1,19 @@
+<div class="pv4">
+  <div class="ph3 mw9 center">
+    <div class="mw9 flex justify-between flex-wrap">
+      <div class="w-40-l ph2-l mb5">
+        <h2 class="f2 b lh-title mb2">{{.heading|safeHTML}}</h2>
+        <p>{{.text|safeHTML}}</p>
+      </div>
+      <div class="w-60-l w-100 ph2-l mb5">
+        {{ range .items }}
+          <div class="mb3 ph2 bb b--grey-2">
+            <h3 class="lh-title b mb2 f3">{{.heading|safeHTML}}</h3>
+            <div class="f6 mb2 grey-3">{{.author|safeHTML}}</div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+</div>

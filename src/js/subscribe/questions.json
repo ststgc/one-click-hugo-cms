@@ -1,0 +1,50 @@
+{
+  "questions": [
+    {
+      "heading": "お届けする本数を選ぶ",
+      "caption": "日本酒の容量は720mlです。本数が多いほど、希少性の高い日本酒が届きます。本数の変更はいつでも可能です。",
+      "responses": [
+        {
+          "heading": "2本", 
+          "score": 2, 
+          "id": "b2", 
+          "text": "一番人気！", 
+          "image": "/img/subscribe/bottle_002.png"
+        }, { 
+          "heading": "1本", 
+          "score": 1, 
+          "id": "b1", 
+          "text": "土日だけ飲む方におすすめ", 
+          "image": "/img/subscribe/bottle_001.png"
+        }
+      ]
+    }, {
+      "heading": "お届け頻度を選ぶ",
+      "caption": "お届け頻度はいつでも変更できます。",
+      "responses": [
+        {
+          "heading": "毎月お届け",
+          "score": 1,
+          "id": "f1",
+          "text": "一番人気はこちら！",
+          "image": "/img/subscribe/frequency_001.png"
+        }, {
+          "heading": "2ヶ月に1回お届け",
+          "score": 0.5,
+          "id": "f2",
+          "text": "外食の多い方におすすめ",
+          "image": "/img/subscribe/frequency_002.png"
+        }
+      ]
+    }, {
+      "heading": "プランを選ぶ",
+      "plan": true,
+      "id": "register",
+      "caption": "北海道・沖縄などの離島は別途1,000円の送料を頂戴します。各プランは自動的に更新されます。6ヶ月・12ヶ月プランの場合は、契約期間内のお届けが終わるまで、途中解約はいたしかねます。6ヶ月・12ヶ月プランの場合も本数・頻度変更が可能ですが、差額の返金はいたしかねます。"
+    }, {
+      "heading": "仮登録をしてカートへ進む",
+      "register": true,
+      "caption": "hoge"
+    }
+  ]
+}

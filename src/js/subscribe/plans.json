@@ -1,0 +1,90 @@
+{
+  "heading": "プランを選ぶ",
+  "choises": [
+    {
+      "score": 1.5,
+      "heading": "月々プラン",
+      "product": {
+        "id": "1_0.5_1",
+        "period": 1,
+        "frequency": 0.5,
+        "url": "https://saketaku.com/gefga",
+        "price": {
+          "base": 4480,
+          "first": 2980,
+          "second": 3980
+        }
+      }
+    }, {
+      "score": 1.5,
+      "heading": "6ヶ月プラン",
+      "product": {
+        "id": "1_0.5_6",
+        "period": 6,
+        "frequency": 0.5,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 13440,
+          "first": 12190,
+          "second": null
+        }
+      }
+    }, {
+      "score": 1.5,
+      "heading": "12ヶ月プラン",
+      "product": {
+        "id": "1_0.5_12",
+        "period": 12,
+        "frequency": 0.5,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 26880,
+          "first": 24150,
+          "second": null
+        }
+      }
+    }, {
+      "score": 2,
+      "heading": "月々プラン",
+      "product": {
+        "id": "1_1_1",
+        "period": 1,
+        "frequency": 1,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 4480,
+          "first": 2980,
+          "second": 3980
+        }
+      }
+    }, {
+      "score": 2,
+      "heading": "6ヶ月プラン",
+      "product": {
+        "id": "1_1_6",
+        "period": 6,
+        "frequency": 1,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 26880,
+          "first": 24192,
+          "second": null
+        }
+      }
+    }, {
+      "score": 2,
+      "heading": "12ヶ月プラン",
+      "product": {
+        "id": "1_1_12",
+        "period": 12,
+        "frequency": 1,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 53760,
+          "first": 49459,
+          "second": null
+        }
+      }
+    }
+  ]
+}

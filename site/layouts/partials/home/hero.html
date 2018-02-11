@@ -1,0 +1,32 @@
+<div class="pv3 ph3">
+  <div class="flex-l items-center ph3-l pt3 pb4 center mw9">
+    <div class="w-40-l relative mb5">
+      <div class="mb3 w-80-l w-50-m w-80">
+        <img src="/img/home/hero/copy.svg" alt="美味しい日本酒に毎月出会おう。"> 
+      </div>
+      <div class="mb4">
+        {{ if .subtitle }}
+          <p class="b f4 di lh-title mb3 mw6">
+            {{.subtitle | safeHTML}}
+          </p>
+        {{ end }}
+      </div>
+      <div class="tl mb3">
+        <a href="/subscribe" class="btn raise">お試しセットを購入する</a>
+      </div>
+      <p class="f6 grey-3">大変ご好評につき、新規ご入会は毎月<span class="b">限定150名様のみ</span>とさせていただきます。定員に達した場合は、恐れ入りますが翌月以降の配送開始となります。ご了承ください。</p>
+    </div>
+    <div class="w-60-l">
+      <div class="w-100 pb4-l pt3-l flex items-center justify-center">
+        <div class="w-80-l w-100">
+          <div class="lazyload aspect-ratio aspect-ratio--1x1 cover" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-large.jpg"></div>
+          <div class="f6 grey-3 lh-title mt3">{{.caption|safeHTML}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fixed dn-ns bottom-1 tc w-100 z-5">
+  <a class="lh-title dib bg-primary ph2 pv2 f6 b no-underline white br1" href="/subscribe">お試しセットを購入する</a>
+</div>

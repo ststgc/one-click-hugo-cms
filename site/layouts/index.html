@@ -1,13 +1,28 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
-{{ partial "short-text" .Params.blurb}}
-
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
+{{ partial "home/hero" .Params.hero }}
+{{ partial "home/problem" .Params.problem}}
+{{ partial "home/steps" .Params.steps }}
+{{ partial "home/brands" .Params.brands }}
+{{ partial "home/process" .Params.process}}
+{{ partial "home/season" .Params.season}}
+{{ partial "home/pos" .Params.pos}}
+{{ partial "home/checklist" .Params.checklist}}
+{{ partial "home/rewards" .Params.rewards}}
+{{ partial "home/campaign" .Params.campaign}}
+{{ partial "home/appetiser" .Params.appetiser}}
+{{ partial "home/safe" .Params.safe}}
+{{ partial "home/days" .Params.days}}
+{{ partial "home/product" .Params.product}}
+{{ partial "home/reviews" .Params.reviews}}
+{{ partial "home/middleman" .Params.middleman}}
+{{ partial "home/message" .Params.message}}
+{{ partial "home/professional" .Params.professional}}
+{{ partial "home/promise" .Params.promise}}
+{{ partial "home/return" .Params.return}}
+{{ partial "home/voice" .Params.voice}}
+{{ partial "home/amb" .Params.amb}}
+{{ partial "home/news" .Params.news}}
+{{ partial "home/help" .Params.help}}
 
 {{ end }}

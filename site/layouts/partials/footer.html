@@ -1,54 +1,60 @@
-<footer class="bg-black ph3 pv4 white">
+<footer class="ph3 pv4">
 
-	<div class="mw7 center pt3">
+	<div class="mw9 center pt3 ph3-l">
 
-		<div class="measure-narrow center mb4">
 
-			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-			<p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
-			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
+		<div class="f6 flex-ns justify-between">
 
-			{{ partial "newsletter-form" . }}
-
-		</div>
-
-		<div class="flex-ns justify-between">
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
+			<div class="ph2-l">
+				<h3 class="b lh-title mb3">saketakuについて</h3>
 				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/products" class="link">Our products</a></li>
-					<li><a href="/values" class="link">About</a></li>
-					<li><a href="/post" class="link">Blog</a></li>
-					<li><a href="/contact" class="link">Contact</a></li>
+					<li><a href="/#product" class="link">お届け内容</a></li>
+					<li><a href="/invite" class="link">お友達紹介プログラム</a></li>
+					<li><a href="/faq" class="link">よくある質問</a></li>
 				</ul>
 			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Find out more</h3>
+			<div class="ph2-l">
+				<h3 class="b lh-title mb3">私たちについて</h3>
 				<ul class="mb3">
-					<li><a href="/post/jamaica-blue/" class="link">Latest offers</a></li>
-					<li><a href="/contact" class="link">Schedule and appointment</a></li>
+					<li><a href="/vision" class="link">私たちについて</a></li>
+					<li><a href="//lab.saketaku.com" class="link">saketaku公式ブログ</a></li>
+					<li><a href="/press" class="link">メディア掲載について</a></li>
+					<li><a href="/company" class="link">運営会社</a></li>
+				</ul>
+			</div>
+			<div class="ph2-l">
+				<h3 class="b lh-title mb3">saketaku会員様向け</h3>
+				<ul class="mb3">
+					<li><a href="//cart.saketaku.com/account/my_page_menu" class="link">ログイン</a></li>
+					<li><a href="//cart.saketaku.com/shop/display_cart" class="link">カートを見る</a></li>
+				</ul>
+			</div>
+			<div class="ph2-l">
+				<h3 class="b lh-title mb3">その他</h3>
+				<ul class="mb3">
+					<li><a href="mailto:hi@saketaku.com" class="link">お問い合わせ</a></li>
+					<li><a href="/privacy" class="link">プライバシーポリシー</a></li>
+					<li><a href="/terms" class="link">利用規約</a></li>
+					<li><a href="/members" class="link">会員規約</a></li>
+					<li><a href="/sctl" class="link">特定商取引に基づく表記</a></li>
+				</ul>
+			</div>
+			<div class="ph2-l">
+				<h3 class="b lh-title mb3">SNSで素敵な情報お届け中</h3>
+				<ul class="mb3">
+					<li><a href="/" class="link">Instagram</a></li>
+					<li><a href="/products" class="link">Facebook</a></li>
+					<li><a href="/values" class="link">Twitter</a></li>
 				</ul>
 			</div>
 
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
-				</ul>
-			</div>
+
+
 
 		</div>
 	</div>
 
 </footer>
-
-{{ partial "svg" . }}
 
 <script src="/app.js"></script>
 

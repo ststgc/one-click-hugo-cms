@@ -35,3 +35,7 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.lazyload {
+  background-color: var(--grey-1);
+}

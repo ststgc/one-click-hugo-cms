@@ -1,0 +1,38 @@
+<div class="pv4">
+  <div class="ph3 mw9 center">
+    <div class="mw9 flex justify-between flex-wrap">
+      <div class="w-40-l ph2-l mb5">
+        <h2 class="f2 b lh-title mb2">{{.heading|safeHTML}}</h2>
+        <p>{{.text|safeHTML}}</p>
+        <div class="tl-l tc mt4 mb5">
+          <a href="/subscribe" class="btn raise">お試しセットを購入する</a>
+        </div>
+      </div>
+      <div class="w-60-l w-100 ph2-l mb5">
+        {{ range .items }}
+          <div class="mb3 ph2 flex justify-between flex-wrap bb-ns b--grey-2">
+            <div class="w-30-l w-100 ph2-l">
+              <div class="aspect-ratio aspect-ratio--1x1 cover mb3" style="background-image: url({{.image}})"></div>
+            </div>
+            <div class="w-70-l ph2-l">
+              <h3 class="lh-title b mb2 f3">{{.heading|safeHTML}}</h3>
+              <div class="f6">{{.text|safeHTML}}</div>
+            </div>
+          </div>
+        {{ end }}
+        {{ with .more }}
+          <div class="mb3 pa4 bg-grey-1">
+            <h3 class="lh-title b mb2 f3">{{.heading|safeHTML}}</h3>
+            <div class="f6 mb3">{{.text|safeHTML}}</div>
+            <div class="w-100 flex flex-wrap justify-between">
+              {{range .items}}
+                <div class="aspect-ratio aspect-ratio--1x1 cover mb3 w-33" style="background-image: url({{.image}})"></div>
+              {{end}}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+</div>

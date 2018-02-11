@@ -5,7 +5,7 @@
 }
 
 .highlight {
-  color: --var(--highlight);
+  color: var(--highlight);
 }
 
 .white {
