@@ -64,4 +64,4 @@ saketakuは、美味しい日本酒を求めるお客様を、様々なサービ
 これからもどうぞ、saketakuの活動にご期待ください。
 
 <br>
-—— 日本酒を愛してやまないsaketakuスタッフ一同より
+<i style='letter-spacing:-1px'>———</i> 日本酒を愛してやまないsaketakuスタッフ一同より
