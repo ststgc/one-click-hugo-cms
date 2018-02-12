@@ -26,6 +26,9 @@
   <div class="center mw6 pv3">
 
     <div id="app">
+      
+
+
       <div class="jump flex items-center justify-center">
         <div class="jump-text">
           <span class="jump-animation">s</span>
@@ -106,7 +109,7 @@
                   </div>
                   <div class="pl3 pl0-m w-100">
                     <div v-if="response.isRecommended" class="b primary f6 mb1">
-                      ＼人気です！／
+                      ＼ 人気です！ ／
                     </div>
                     <div v-else="" class="f6 mb1 o-0 dn db-m">.</div>
                     <h3 class='b f5 lh-title mb2'>
@@ -125,16 +128,21 @@
                class="flex-m justify-center flex-wrap mb3">
             <div class="ph2-m mb2 w-50-m relative" v-for="choise in plans.choises">
               <div class="pa3 flex flex-column-m items-center justify-between bg-grey-1 br1 tc-l raise pointer" v-if="choise.score === total">
+                
+                <div style="font-size:.6rem">
+                  <div>Plan Computed: ((choise.product.url))</div>
+                  <div>Plan Selected: ((plan_selected_url))</div>
+                </div>
+
                 <div class="absolute w-100 h-100 z-5">
                   <input v-bind:value="choise.product.url"
                          v-bind:name="index"
-                         v-model="plan_selected_url"
-                         v-on:click="next"
+                         @click="which_plan_and_next(choise.product.url)"
                          type="radio"
-                         v-bind:id="(( question.id ))" 
+                         v-bind:id="(( choise.product.id ))" 
                          class="dn"
                          >
-                  <label v-bind:for="(( question.id ))" class="db absolute absolute--fill pointer"></label>
+                  <label v-bind:for="(( choise.product.id ))" class="db absolute absolute--fill pointer"></label>
                 </div>
                 
                 <div class="w5 tc-ns">
@@ -215,6 +223,10 @@
                class="mb3">
             <div class="mw6-ns ph5-ns pv3-l pa3 center bg-grey-1 br1">
               
+              <div style="font-size:.6rem">
+                <div>Plan Selected: ((plan_selected_url))</div>
+              </div>
+
               <form id="form_select_plan" v-bind:data-plan="(( plan_selected_url ))">
                 <div class="mhn1-l mw-100 center">
                   <!-- Name -->

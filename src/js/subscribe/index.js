@@ -66,6 +66,15 @@ const subscribe = new Vue({
     next: function(){
       this.questionIndex++;
     },
+
+
+    which_plan_and_next: function(plan){
+      this.plan_selected_url = plan;
+      console.log('Plan Selected: ' + this.plan_selected_url);
+      console.log('Plan: ' + plan);
+      this.questionIndex++;
+    }
+
   },
   computed: {
     total: function(){

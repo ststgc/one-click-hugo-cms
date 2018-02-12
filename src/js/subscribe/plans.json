@@ -8,7 +8,7 @@
         "id": "1_0.5_1",
         "period": 1,
         "frequency": 0.5,
-        "url": "https://saketaku.com/gefga",
+        "url": "http://cart.saketaku.com/shop/add_to_cart/?item_qty_67[qty]=1&item_id_67",
         "price": {
           "base": 4480,
           "first": 2980,
@@ -23,7 +23,7 @@
         "id": "1_0.5_12",
         "period": 12,
         "frequency": 0.5,
-        "url": "https://saketaku.com/c",
+        "url": "http://cart.saketaku.com/shop/add_to_cart/?item_qty_73[qty]=1&item_id_73",
         "price": {
           "base": 26880,
           "first": 24580,
@@ -37,7 +37,7 @@
         "id": "1_1_1",
         "period": 1,
         "frequency": 1,
-        "url": "https://saketaku.com",
+        "url": "http://cart.saketaku.com/shop/add_to_cart/?item_qty_65[qty]=1&item_id_65",
         "price": {
           "base": 4480,
           "first": 2980,
@@ -52,7 +52,7 @@
         "id": "1_1_12",
         "period": 12,
         "frequency": 1,
-        "url": "https://saketaku.com",
+        "url": "http://cart.saketaku.com/shop/add_to_cart/?item_qty_71[qty]=1&item_id_71",
         "price": {
           "base": 53760,
           "first": 48300,
@@ -66,7 +66,7 @@
         "id": "2_0.5_1",
         "period": 1,
         "frequency": 0.5,
-        "url": "https://saketaku.com",
+        "url": "http://cart.saketaku.com/shop/add_to_cart/?item_qty_68[qty]=1&item_id_68",
         "price": {
           "base": 5980,
           "first": 3980,
@@ -81,7 +81,7 @@
         "id": "2_0.5_12",
         "period": 12,
         "frequency": 0.5,
-        "url": "https://saketaku.com",
+        "url": "http://cart.saketaku.com/shop/add_to_cart/?item_qty_74[qty]=1&item_id_74",
         "price": {
           "base": 35880,
           "first": 32480,
@@ -95,7 +95,7 @@
         "id": "2_1_1",
         "period": 1,
         "frequency": 1,
-        "url": "https://saketaku.com",
+        "url": "http://cart.saketaku.com/shop/add_to_cart/?item_qty_66[qty]=1&item_id_66",
         "price": {
           "base": 5980,
           "first": 3980,
@@ -110,7 +110,7 @@
         "id": "2_1_12",
         "period": 12,
         "frequency": 1,
-        "url": "https://saketaku.com",
+        "url": "http://cart.saketaku.com/shop/add_to_cart/?item_qty_72[qty]=1&item_id_72",
         "price": {
           "base": 71760,
           "first": 66480,
