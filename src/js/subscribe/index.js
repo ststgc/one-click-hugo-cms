@@ -59,7 +59,7 @@ const subscribe = new Vue({
       if (touchMap.has($v)) {
         clearTimeout(touchMap.get($v))
       }
-      touchMap.set($v, setTimeout($v.$touch, 1000))
+      touchMap.set($v, setTimeout($v.$touch, 500))
     },
 
     // Go to next question

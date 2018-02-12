@@ -23,7 +23,7 @@
 
 
 <div class="ph3 pb6">
-  <div class="center mw7 pv3">
+  <div class="center mw6 pv3">
 
     <div id="app">
       <div class="jump flex items-center justify-center">
@@ -43,20 +43,51 @@
       </div>
       <div v-for="(question, index) in questions.questions">
         <div v-show="index === questionIndex">
-          <h2 class="b f3 tc mb3">
+          <h2 class="b f3 tc mb1">
             <span class="f6 grey-3 db mb1">
               ステップ ((index+1)) / ((questions.questions.length))
             </span>
             (( question.heading ))
-            <span v-if="question.plan" class="f6 grey-3 db mb1">
-              ご希望のプランをカートに入れてください
-            </span>
-            <span v-if="question.register" class="f6 grey-3 db mb1">
-              お疲れ様です、あともう少しで完了です。
-            </span>
           </h2>
+          <div class="tc f6 grey-3 mb3">
+            <div v-if="index === 1">
+              <span class="o-60">ご選択中の内容：</span>
+              <br>美味しい日本酒
+              <span class="b primary">(( plan_scores[0] ))本</span>
+              をお届け
+            </div>
+            <div v-if="question.plan">
+              <div class="f6 grey-3 db mb3">ご希望のプランをカートに入れてください</div>
+              <div>
+                <span class="o-60">ご選択中の内容：</span>
+                <br>美味しい日本酒
+                <span class="b primary">(( plan_scores[0] ))本</span>
+                を
+                <span class="b primary">(( plan_scores[1] === 0.5 ? '2ヶ月に1回' : '毎月' ))</span>
+                お届け
+              </div>
+            </div>
+            <div v-if="question.register">
+              <div class="f6 grey-3 db mb1">お疲れ様です、あともう少しで完了です。</div>
+              <div>
+                <span class="o-60">ご選択中の内容：</span>
+                <br>美味しい日本酒
+                <span class="b primary">(( plan_scores[0] ))本</span>
+                を
+                <span class="b primary">(( plan_scores[1] === 0.5 ? '2ヶ月に1回' : '毎月' ))</span>
+                お届けする
+                「
+                <span v-for="choise in plans.choises" class="b primary">
+                  <span v-if="choise.score === total">
+                    (( plan_selected_url === choise.product.url ? choise.heading : '' ))
+                  </span>
+                </span>
+                」
+              </div>
+            </div>
+          </div>
           <div v-if="!question.plan || !question.register" class="flex-m justify-center flex-wrap mb3">
-            <div v-for="response in question.responses" class="ph2-m mb2 w-33-m">
+            <div v-for="response in question.responses" class="ph2-m mb2 w-50-m">
               <div class="bg-grey-1 br1 tc-m relative raise">
                 <div class="absolute w-100 h-100 z-5">
                   <input v-bind:value="response.score"
@@ -74,6 +105,10 @@
                     <img v-bind:src="((response.image))" alt="">
                   </div>
                   <div class="pl3 pl0-m w-100">
+                    <div v-if="response.isRecommended" class="b primary f6 mb1">
+                      ＼人気です！／
+                    </div>
+                    <div v-else="" class="f6 mb1 o-0 dn db-m">.</div>
                     <h3 class='b f5 lh-title mb2'>
                       ((response.heading))
                     </h3>
@@ -88,7 +123,7 @@
           </div>
           <div v-if="question.plan"
                class="flex-m justify-center flex-wrap mb3">
-            <div class="ph2-m mb2 w-33-m relative" v-for="choise in plans.choises">
+            <div class="ph2-m mb2 w-50-m relative" v-for="choise in plans.choises">
               <div class="pa3 flex flex-column-m items-center justify-between bg-grey-1 br1 tc-l raise pointer" v-if="choise.score === total">
                 <div class="absolute w-100 h-100 z-5">
                   <input v-bind:value="choise.product.url"
@@ -104,36 +139,51 @@
                 
                 <div class="w5 tc-ns">
                   <div v-if="choise.isRecommended" class="b primary f6 mb1">
-                    ＼人気です！／
+                    ＼今だけオトク！／
                   </div>
+                  <div v-else="" class="f6 mb1 o-0 dn db-m">.</div>
                   <h3 class="b f5 lh-title mb2 ">(( choise.heading ))</h3>
                 </div>
                 <ul class="w-100">
                   <li class='f6 bb b--grey-2 pv2 lh-solid'>
-                    初回
+                    <span style="font-size:0.75rem">初回</span>
                     <span class="b f4 mh1">
                       (( choise.product.price.first | moneyDelimiter ))
                     </span>
-                    円（税抜）
+                    <span style="font-size:0.75rem;">円（税抜）</span>
                   </li>
                   <li v-if="choise.product.price.second"
                       class='f6 bb b--grey-2 pv2 lh-solid'>
-                    2回目
+                    <span style="font-size:0.75rem;">2回目</span>
                     <span class="b f5 mh1">(( choise.product.price.second | moneyDelimiter ))</span>
-                    円（税抜）
+                    <span style="font-size:0.75rem;">円（税抜）</span>
                   </li>
                   <li class='f6 pv2 lh-solid'>
-                    以降
+                    <span style="font-size:0.75rem;">以降</span>
                     <span class="b f5 mh1">(( choise.product.price.base | moneyDelimiter ))</span>
-                    円（税抜）
+                    <span style="font-size:0.75rem;">円（税抜）</span>
+
                   </li>
+
+                  <!-- お届け1回分の料金割り出し -->
+                  <!-- 12回分お届け総額を基本として考える -->
+                  <!-- 6ヶ月プラン or 12ヶ月プラン -->
                   <li v-if='choise.product.price.second === null'
                       class='f6 bt b--grey-2 pv2 lh-solid'>
-                      お届け1回分
-                      <span class="b f5 mh1">
-                        (( choise.product.price.first / (choise.product.period * choise.product.frequency) | moneyDelimiter ))
+                    <span style="font-size:0.75rem;">お届け1回分</span>
+                    <span class="b f5 mh1">
+
+                      <!-- 12ヶ月プラン -->
+                      <span v-if="choise.product.frequency === 1">
+                        (( choise.product.price.first / 12 | moneyDelimiter ))
                       </span>
-                      円（税抜）
+                      <span v-if="choise.product.frequency === 0.5">
+                        (( choise.product.price.first / 6 | moneyDelimiter ))
+                      </span>
+
+                      
+                    </span>
+                    <span style="font-size:0.75rem;">円（税抜）</span>
                   </li>
                   <li class='f6 mt3'>
                     <div class="lh-title pb2 b">今だけのキャンペーン特典</div>
@@ -142,8 +192,8 @@
                     <span v-if="choise.product.price.second"
                           class="b lh-title">
                       (( 
-                        choise.product.price.base - choise.product.price.first +
-                        choise.product.price.base - choise.product.price.second 
+                        choise.product.price.base * 2
+                        - (choise.product.price.first + choise.product.price.second) 
                          | moneyDelimiter
                        ))
                     </span>
@@ -190,7 +240,7 @@
                         id="email"
                         name="email"
                         v-model.trim="email" 
-                        v-bind:input="delayTouch($v.email)"
+                        @input="delayTouch($v.email)"
                         placeholder="メールアドレスを入力する" 
                         class="w-100 mb2">
                       <span class="f6 primary b" v-if="!$v.email.required">メールアドレスは必須です</span>

@@ -17,30 +17,16 @@
       }
     }, {
       "score": 1.5,
-      "heading": "6ヶ月プラン",
-      "isRecommended": true,
-      "product": {
-        "id": "1_0.5_6",
-        "period": 6,
-        "frequency": 0.5,
-        "url": "https://saketaku.com",
-        "price": {
-          "base": 13440,
-          "first": 12190,
-          "second": null
-        }
-      }
-    }, {
-      "score": 1.5,
       "heading": "12ヶ月プラン",
+      "isRecommended": true,
       "product": {
         "id": "1_0.5_12",
         "period": 12,
         "frequency": 0.5,
-        "url": "https://saketaku.com",
+        "url": "https://saketaku.com/c",
         "price": {
           "base": 26880,
-          "first": 24150,
+          "first": 24580,
           "second": null
         }
       }
@@ -60,22 +46,8 @@
       }
     }, {
       "score": 2,
-      "heading": "6ヶ月プラン",
-      "isRecommended": true,
-      "product": {
-        "id": "1_1_6",
-        "period": 6,
-        "frequency": 1,
-        "url": "https://saketaku.com",
-        "price": {
-          "base": 26880,
-          "first": 24192,
-          "second": null
-        }
-      }
-    }, {
-      "score": 2,
       "heading": "12ヶ月プラン",
+      "isRecommended": true,
       "product": {
         "id": "1_1_12",
         "period": 12,
@@ -83,7 +55,65 @@
         "url": "https://saketaku.com",
         "price": {
           "base": 53760,
-          "first": 49459,
+          "first": 48300,
+          "second": null
+        }
+      }
+    }, {
+      "score": 2.5,
+      "heading": "月々プラン",
+      "product": {
+        "id": "2_0.5_1",
+        "period": 1,
+        "frequency": 0.5,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 5980,
+          "first": 3980,
+          "second": 4980
+        }
+      }
+    }, {
+      "score": 2.5,
+      "heading": "12ヶ月プラン",
+      "isRecommended": true,
+      "product": {
+        "id": "2_0.5_12",
+        "period": 12,
+        "frequency": 0.5,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 35880,
+          "first": 32480,
+          "second": null
+        }
+      }
+    }, {
+      "score": 3,
+      "heading": "月々プラン",
+      "product": {
+        "id": "2_1_1",
+        "period": 1,
+        "frequency": 1,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 5980,
+          "first": 3980,
+          "second": 4980
+        }
+      }
+    }, {
+      "score": 3,
+      "heading": "12ヶ月プラン",
+      "isRecommended": true,
+      "product": {
+        "id": "2_1_12",
+        "period": 12,
+        "frequency": 1,
+        "url": "https://saketaku.com",
+        "price": {
+          "base": 71760,
+          "first": 66480,
           "second": null
         }
       }
