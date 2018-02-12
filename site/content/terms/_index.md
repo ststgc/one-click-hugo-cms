@@ -1,6 +1,6 @@
 ---
 title: 'Terms'
-subtitle: '利用規約'
+subtitle: 'saketaku利用規約'
 date: 2017-01-04T15:04:10.000Z
 ---
 

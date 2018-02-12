@@ -262,12 +262,15 @@
                 </div>
                 <!-- Button -->
                 <div class="tc mw5-l center">
+                  <div v-if="question.register" class="ph2-l lh-copy f6 grey-3 tc mb3">
+                    <a href="/terms" target=_blank>saketaku利用規約</a> に同意の上、<br>「同意してカートに進む」ボタンを押してください。
+                  </div>
                   <button 
                     type="submit"
                     v-on:click="submit"
                     class="btn w-100 o-30"
                     v-bind:class="{error: $v.name.$error, valid: $v.name.$dirty && !$v.name.$invalid}">
-                    仮登録をしてカートへ進む</button>
+                    同意してカートに進む</button>
                 </div>
               </form>
 
