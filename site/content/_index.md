@@ -314,7 +314,7 @@ promise:
 return:
   image: "img/home/return/001"
   leader: "＼安心保証キャンペーン同時開催中／"
-  heading: "ご安心ください。<br>内容にご満足いただけない場合は、<br><span class='b primary'>全額返金を保証</span>します。"
+  heading: "ご安心ください。<br>ご満足いただけない場合は、<br><span class='b primary'>全額返金を保証</span>します。"
   text: "saketakuは、自信を持って商品をご提供しているからこそ、<span class='b primary'>全額返金保証</span>いたします。安心してお試しください。万が一、サービスの体験にご満足いただけない場合は、ご注文日より一週間以内にお客さまサポートまでご連絡くさい。初回お届け分の代金を<span class='b primary'>全額ご返金</span>いたします。"
   caption: "【全額返金保証キャンペーンについて】"
   items:
