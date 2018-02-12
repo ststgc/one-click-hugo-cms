@@ -1,7 +1,7 @@
 ---
 title: "美味しい日本酒の定期便（頒布会）"
 hero:
-  subtitle: 'こだわったのは<span class="primary">「美味しさ」</span>と<span class="primary">「希少性」</span>。<br>日本酒ソムリエ厳選の極上セレクションが、<br>月々2,980円から。今なら、<span class="primary">送料ずっと無料</span>。<br>安心の<span class="primary">全額返金保証</span>付き。'
+  subtitle: 'こだわったのは<span class="primary">「美味しさ」</span>と<span class="primary">「希少性」</span>。<br>日本酒ソムリエ厳選の極上セレクションが、<br>月々2,980円から。今だけ、<span class="primary">送料ずっと無料</span>。<br>安心の<span class="primary">全額返金保証</span>付き。'
   image: "/img/home/hero/001"
   caption: '<h3 class="b db mb2">お届けした「美味しい日本酒」と「本格一品おつまみ」</h3>岩手誉 純米吟醸 夢ふぶき<br>ひろしま牡蠣のオリーブオイル漬け'
 
@@ -187,7 +187,7 @@ voice:
       author: "山口県・56歳・男性"
     - heading: "日本酒で家族と盛りあがれるところ。"
       author: "静岡県・35歳・男性"
-    - heading: "ここのお酒の楽しみ方を教えてもらえるところ。"
+    - heading: "個々のお酒の楽しみ方を教えてもらえるところ。"
       author: "神奈川県・51歳・女性"
     - heading: "知らない銘柄を飲めるところ。"
       author: "東京都・38歳・女性"
