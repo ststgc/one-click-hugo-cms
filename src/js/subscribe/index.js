@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuelidate from 'vuelidate';
+import VueRouter from 'vue-router';
 import questions from "./questions";
 import plans from "./plans";
 
@@ -8,6 +9,7 @@ import plans from "./plans";
 import { required, email } from 'vuelidate/lib/validators';
 
 Vue.use(Vuelidate)
+Vue.use(VueRouter)
 const touchMap = new WeakMap()
 
 const subscribe = new Vue({
