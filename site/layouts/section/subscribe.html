@@ -264,7 +264,7 @@
                     type="submit"
                     v-on:click="submit"
                     class="btn w-100 o-30"
-                    v-bind:class="{error: $v.name.$error, valid: $v.name.$dirty && !$v.name.$invalid}">
+                    v-bind:class="{error: $v.name.$error, valid: !$v.name.$invalid}">
                     同意してカートに進む</button>
                 </div>
               </form>
