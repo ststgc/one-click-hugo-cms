@@ -4,16 +4,27 @@ import VueRouter from 'vue-router';
 import questions from "./questions";
 import plans from "./plans";
 
-
-
 import { required, email } from 'vuelidate/lib/validators';
-
 Vue.use(Vuelidate)
-Vue.use(VueRouter)
+
 const touchMap = new WeakMap()
 
+
+
+
+// TODO: Scripts for Router 
+
+// import routes from './routes';
+// Vue.use(VueRouter)
+
+// const router = new VueRouter({
+//   mode: 'history',
+//   routes
+// });
+
 const subscribe = new Vue({
-  el: '#app',
+  el: '#subscribe',
+  // router,
   delimiters: ["((","))"],
   data: { 
     questions: questions,
@@ -72,8 +83,6 @@ const subscribe = new Vue({
 
     which_plan_and_next: function(plan){
       this.plan_selected_url = plan;
-      console.log('Plan Selected: ' + this.plan_selected_url);
-      console.log('Plan: ' + plan);
       this.questionIndex++;
     }
 
@@ -88,7 +97,7 @@ const subscribe = new Vue({
       }, 0);
     },
   },
-});
+})
 
 
 

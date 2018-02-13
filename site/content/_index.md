@@ -1,7 +1,7 @@
 ---
 title: "美味しい日本酒の定期便（頒布会）"
 hero:
-  subtitle: '<span class="primary">「美味しさ」</span>と<span class="primary">「希少性」</span>にこだわった、<br>ソムリエ厳選の極上セレクション。<br>月々2,980円から楽しめる、<br><span class="primary">完全招待制</span>の日本酒頒布会です。<br><br>今だけ、<span class="primary">送料ずっと無料</span>。<br>安心の<span class="primary">全額返金保証</span>付き。'
+  subtitle: '<span class="primary">「美味しさ」</span>と<span class="primary">「希少性」</span>にこだわった、<br>ソムリエ厳選の極上セレクション。<br>月々2,980円から、全国津々浦々の<br>隠れた銘酒にたくさん出会えます。<br><br>今だけ、<span class="primary">送料ずっと無料</span>。<br>安心の<span class="primary">全額返金保証</span>付き。'
   image: "/img/home/hero/001"
   caption: '<h3 class="b db mb2">お届けした「美味しい日本酒」と「本格一品おつまみ」</h3>岩手誉 純米吟醸 夢ふぶき<br>ひろしま牡蠣のオリーブオイル漬け'
 
