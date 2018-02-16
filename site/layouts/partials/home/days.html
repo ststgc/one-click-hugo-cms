@@ -7,6 +7,19 @@
         <p>{{.text|safeHTML}}</p>
       </div>
     </div>
+
+    <div class="mw9 center overflow-x-scroll relative mb3">
+      <div class="flex w-100">
+        {{ range .visions }}
+          <div class="ph2">
+            <div class="w5">
+              <div class="blur-up lazyload aspect-ratio aspect-ratio--1x1 cover" style="background-image: url({{.image}}-lqip.jpg)" data-bg="{{.image}}.jpg"></div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
     <div class="w-100 ph2-l">
       <div class="blur-up lazyload aspect-ratio aspect-ratio--1x1 cover mb3" style="background-image: url({{.image}}-lqip.jpg)" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-medium.jpg [--medium] | {{.image}}-large.jpg"></div>
     </div>

@@ -190,6 +190,16 @@ days:
   heading: "日本酒の生みの親、<br>造り手の情熱が伝わる<br>日本酒の情報誌付き"
   text: "日本酒好きなら、<span class='b primary'>「全国の酒蔵を巡りたい」</span>と一度は思うもの。全国1,500もある酒蔵を巡るのは簡単ではありませんが、saketakuがそれをお手伝いします。私たちが造り手である酒蔵の主要人物にインタビューを行い、<span class='b primary'>「美味しい日本酒が生まれた背景」</span>を聞き出して、その熱量をそのまま皆さまにお届け。<span class='b primary'>実際に蔵を訪れたようなバーチャルな酒蔵巡り体験ができる</span>、と人気の情報誌です。"
   image: "img/home/days/001"
+  visions:
+    - image: "/img/home/days/visions/001"
+    - image: "/img/home/days/visions/002"
+    - image: "/img/home/days/visions/003"
+    - image: "/img/home/days/visions/004"
+    - image: "/img/home/days/visions/005"
+    - image: "/img/home/days/visions/006"
+    - image: "/img/home/days/visions/007"
+
+
 
 voice:
   heading: "会員の方に、<br>「saketakuの好きな所」<br>を聞いてみました"
