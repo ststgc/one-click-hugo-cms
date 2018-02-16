@@ -8,7 +8,7 @@ hero:
 problem:
   heading: "ご存知でした？<br>全国に<span class=primary>1.5万</span>もの日本酒が存在するのに、私たちはその<span class=primary>1%にも出会えてません。</span>"
   text: "<p>全国には1.5万銘柄の日本酒があると言われています。</p><p>しかし、私たちのまわりで気軽に手に入る日本酒は、多くても20銘柄ぐらい。比率に直すと「1%」にも満たない数字です。日本酒マニアな人でも、実はほとんどの方が<span class=primary>「残りの99%」に出会えていません。</span></p><p>有名蔵のお酒はどんどん売れていますが、地方の小さな酒蔵の日本酒はほとんどが地元消費。さらに、その消費量さえ減少傾向で、撤退を余儀なくする蔵が後を絶ちません。</p><p>有名蔵のお酒に肩を並べられる極上の日本酒は、実は全国にたくさん存在します。そしてそのほとんどが、家族経営の小さな酒蔵で造られています。</p><p>日本酒は、一本一本が再生産不可能な、<span class=primary>１点ものの芸術品</span>です。</p><p>そんな最高の日本酒の存在を、ひとりでも多くの方に知ってもらいたい。</p><p>そんな熱い使命を胸に、saketakuというサービスは誕生しました。saketakuというサービスを通して、<span class=primary>入手困難な極上の日本酒</span>に私たちがアクセスし、皆さまに<span class=primary>最高の状態でお届けする</span>ことをお約束します。</p>"
-  image: "/img/home/problem/001"
+  image: "/img/home/problem/002"
 
 steps:
   heading: "3つのステップで<br>美味しい日本酒“だけ”お届けします"
@@ -123,12 +123,26 @@ pos:
     - image: "/img/home/pos/007"
       heading: "<span class='f6 i primary dib mb1'>ポイントその6</span><br>酵母やお米・製法など、日本酒にまつわる詳しい学習コラム"
       text: "<p class='lh-copy'>一見難しい日本酒の専門用語ですが、紐解いていくと案外簡単で面白さにあふれています。お届けする日本酒に関する専門用語をプロが解説し、あなたの知的好奇心を刺激します。</p>"
+  visions:
+    - image: "/img/home/pos/visions/001"
+    - image: "/img/home/pos/visions/002"
+    - image: "/img/home/pos/visions/003"
+    - image: "/img/home/pos/visions/004"
+    - image: "/img/home/pos/visions/005"
+    - image: "/img/home/pos/visions/006"
 
 checklist:
   leader: "＼あなたの知らない日本酒の魅力！／"
   heading: "さらに、<br>利き酒を本格的に楽しむ<br>テイスティングシートも<br>毎月同封します！"
   text: "日本酒の鑑定書を読んでいると「自分もテイスティングしてみたい！」と思うハズ。そんな方のために、各銘柄に使えるテイスティングシートを同封しています。専門家が使っているシートと全く同じ形式のため少し難易度が高めですが、同封の<i class='b primary'>「専門家の筆跡」</i>を参考にぜひトライしてみてください。日本酒と正面から向き合った人だけが気づける<i class='b primary'>「新たな日本酒の魅力」</i>、ぜひ体感してみてください。"
   image: "/img/home/checklist/001"
+  visions:
+    - image: "/img/home/checklist/visions/001"
+    - image: "/img/home/checklist/visions/002"
+    - image: "/img/home/checklist/visions/003"
+    - image: "/img/home/checklist/visions/004"
+    - image: "/img/home/checklist/visions/005"
+    - image: "/img/home/checklist/visions/006"
 
 rewards:
   heading: "なんと！<br>全員必ずもらえる、<br>豪華プレゼント付き"
