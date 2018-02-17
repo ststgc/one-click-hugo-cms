@@ -136,7 +136,7 @@
                 <div class="absolute w-100 h-100 z-5">
                   <input v-bind:value="choise.product.url"
                          v-bind:name="index"
-                         @click="which_plan_and_next(choise.product.url)"
+                         @click="which_plan_and_next(choise.product)"
                          type="radio"
                          v-bind:id="(( choise.product.id ))" 
                          class="dn"
@@ -224,6 +224,12 @@
 
               <form id="form_select_plan" v-bind:data-plan="(( plan_selected_url ))">
                 <div class="mhn1-l mw-100 center">
+                  <!-- Selected Plan -->
+                      <input 
+                        type="text" 
+                        v-bind:value="(( plan_selected_name ))"
+                        class="dn">
+
                   <!-- Name -->
                   <div class="mb3">
                     <fieldset>

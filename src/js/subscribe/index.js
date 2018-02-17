@@ -30,6 +30,7 @@ const subscribe = new Vue({
     questions: questions,
     plans: plans,
     plan_selected_url: '',
+    plan_selected_name: '',
 
     // Validator
     name: '',
@@ -82,7 +83,8 @@ const subscribe = new Vue({
 
 
     which_plan_and_next: function(plan){
-      this.plan_selected_url = plan;
+      this.plan_selected_url = plan.url;
+      this.plan_selected_name = plan.id;
       this.questionIndex++;
     }
 
