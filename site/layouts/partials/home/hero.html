@@ -41,25 +41,7 @@
       <div class="mb3 w-80-l w-50-m w-80">
         <img src="/img/home/hero/copy.svg" alt="美味しい日本酒に毎月出会おう。"> 
       </div>
-      <style>
-        .yotpo {
-          margin-bottom: 1rem;
-        }
-        .yotpo .text-m {
-          margin-left: .25rem;
-        }
-      </style>
-      <div class="yotpo bottomLine b"
-        data-appkey="ll6NIsvNfEZRWovqNqpTdfiR0xi01Os0NVDvyXWS"
-        data-domain="saketaku.com"
-        data-product-id="yotpo_site_reviews"
-        data-product-models="saketaku"
-        data-name="saketaku"
-        data-url="https://saketaku.com"
-        data-image-url=""
-        data-description="the future of sake experience"
-        data-bread-crumbs="Product categories">
-      </div>
+      {{ partial "yotpo-badge" }}
       <div class="mb4">
         {{ if .subtitle }}
           <p class="b f4 di lh-title mb3 mw6">

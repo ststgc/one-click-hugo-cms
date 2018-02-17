@@ -1,0 +1,84 @@
+<style>
+  .yotpo {
+    margin-right: .5rem;
+  }
+  .saketaku__review .yotpo .yotpo-clr {
+    clear: none;
+  }
+  .yotpo .text-m {
+    display: none;
+  }
+  .saketaku__review {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .saketaku__review span {
+    font-weight: bold;
+  }
+  .saketaku__review .saketaku__review-ave {
+    display: inline;
+    margin-right: .5rem;
+  }
+  .saketaku__review .saketaku__review-total {
+    display: block;
+  }
+</style>
+<div class="saketaku__review">
+  <div class="yotpo bottomLine b"
+    data-appkey="ll6NIsvNfEZRWovqNqpTdfiR0xi01Os0NVDvyXWS"
+    data-domain="saketaku.com"
+    data-product-id="yotpo_site_reviews"
+    data-product-models="saketaku"
+    data-name="saketaku"
+    data-url="https://saketaku.com"
+    data-image-url=""
+    data-description="the future of sake experience"
+    data-bread-crumbs="Product categories">
+  </div>
+
+  <div class="saketaku__review-ave">
+    <span id="yotpo_average_score">4.4</span> / 5
+  </div>
+  <div class="saketaku__review-total">
+    <span id="yotpo_total_reviews">4209</span> 件のレビュー
+  </div>
+</div>
+
+
+<script>
+
+  var url = "https://api.yotpo.com/products/ll6NIsvNfEZRWovqNqpTdfiR0xi01Os0NVDvyXWS/yotpo_site_reviews/bottomline";
+  var average_score = '';
+  var total_reviews = '';
+  var el_ave = document.getElementById("yotpo_average_score");
+  var el_total = document.getElementById("yotpo_total_reviews");
+  fetch(url)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(jsonResponse) {
+      // do something with jsonResponse
+      average_score = jsonResponse.response.bottomline.average_score;
+      total_reviews = jsonResponse.response.bottomline.total_reviews;
+      el_ave.innerHTML = average_score;
+      el_total.innerHTML = total_reviews;
+    });
+
+</script>
+
+
+
+<script type="application/ld+json">{  
+   "@context":"http://schema.org",
+   "@type":"Organization",
+   "name":"saketaku",
+   "url":"https://saketaku.com/products/saketaku",
+   "aggregateRating":{  
+      "@type":"AggregateRating",
+      "ratingValue":"{#average_score}",
+      "bestRating":"5",
+      "reviewCount":"{#total_reviews}"
+   },
+   "logo":"http://saketaku.com/img/global/logo.svg"
+}</script>
