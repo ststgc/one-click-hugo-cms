@@ -271,6 +271,10 @@
             </div>
           </div>
           <div class="ph2-l lh-copy f6 grey-3 tc">((question.caption))</div>
+          <div v-if="question.register" class="ph2-l lh-copy f6 grey-3 tc">
+            仮登録がお済みの方は
+            <a v-bind:href="(( plan_selected_url ))">スキップ</a>
+          </div>
         </div>
         
       </div>
