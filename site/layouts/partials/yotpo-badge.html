@@ -17,11 +17,11 @@
     font-weight: bold;
   }
   .saketaku__review .saketaku__review-ave {
-    display: inline;
     margin-right: .5rem;
+    color: #595756;
   }
   .saketaku__review .saketaku__review-total {
-    display: block;
+    color: #595756;
   }
 </style>
 <div class="saketaku__review">
@@ -37,11 +37,12 @@
     data-bread-crumbs="Product categories">
   </div>
 
+  
   <div class="saketaku__review-ave">
-    <span id="yotpo_average_score">4.4</span> / 5
+    (<span id="yotpo_average_score">4.4</span> / 5
   </div>
   <div class="saketaku__review-total">
-    <span id="yotpo_total_reviews">4209</span> 件のレビュー
+    <span id="yotpo_total_reviews">4209</span> 件のレビュー)
   </div>
 </div>
 
@@ -53,6 +54,9 @@
   var total_reviews = '';
   var el_ave = document.getElementById("yotpo_average_score");
   var el_total = document.getElementById("yotpo_total_reviews");
+  var el_gsnippet = document.createElement('script');
+  el_gsnippet.setAttribute('type','application/ld+json');
+  document.head.appendChild(el_gsnippet);
   fetch(url)
     .then(function(response) {
       return response.json();
@@ -63,22 +67,18 @@
       total_reviews = jsonResponse.response.bottomline.total_reviews;
       el_ave.innerHTML = average_score;
       el_total.innerHTML = total_reviews;
+      el_gsnippet.innerHTML = '{' +
+           '"@context":"http://schema.org",'+
+           '"@type":"Product",'+
+           '"name":"美味しい日本酒の定期便「saketaku」",'+
+           '"url":"https://saketaku.com/products/saketaku",'+
+           '"aggregateRating":{'+
+              '"@type":"AggregateRating",'+
+              '"ratingValue":"' + average_score + '",' +
+              '"bestRating":"5",'+
+              '"reviewCount":"' + total_reviews + '"' + 
+           '},'+
+           '"logo":"http://saketaku.com/img/global/logo.svg"'+
+        '}';
     });
-
 </script>
-
-
-
-<script type="application/ld+json">{  
-   "@context":"http://schema.org",
-   "@type":"Organization",
-   "name":"saketaku",
-   "url":"https://saketaku.com/products/saketaku",
-   "aggregateRating":{  
-      "@type":"AggregateRating",
-      "ratingValue":"{#average_score}",
-      "bestRating":"5",
-      "reviewCount":"{#total_reviews}"
-   },
-   "logo":"http://saketaku.com/img/global/logo.svg"
-}</script>
