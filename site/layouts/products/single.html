@@ -1,38 +1,5 @@
 {{ define "main" }}
 
-<script type="text/x-template" id="modal-template">
-  <transition name="modal">
-
-    <div class="fixed z-999 absolute--fill flex items-center content-center modal-mask">
-
-        <div class="modal-container mw7 center tc w-100">
-
-          <div class="modal-header mb4">
-            <slot name="header">
-              default header
-            </slot>
-          </div>
-
-          <div class="modal-body mb3">
-            <slot name="body">
-              default body
-            </slot>
-          </div>
-
-          <div class="modal-footer">
-            <slot name="footer">
-              <div class="white b dib pb1 pointer bb bw1 modal-default-button" @click="$emit('close')">
-                閉じる
-              </div>
-            </slot>
-          </div>
-        </div>
-      </div>
-
-  </transition>
-</script>
-
-
 <div class="bb b--grey-2">
   <div class="ph3 pt3 pb4 center mw9">
     <div class="flex flex-column flex-row-l mhn2-l">
@@ -68,10 +35,16 @@
         <div class="ph2-l">
           <div class="">
             <h2 class="f4 b lh-title serif mb2">
-              saketakuの<br>美味しい日本酒セット
+              saketakuオリジナル<br>美味しい日本酒セレクション
             </h2>
             
             {{ partial "yotpo-badge" }}
+            
+            <div class="mb3">
+              <span class="f6 grey-3">月々</span>
+              <span class="f4 b">2,980</span>
+              <span class="f6 grey-3">円（税抜）〜</span>
+            </div>
 
             <div class="lh-copy mb3">
               「美味しさ」と「希少性」にこだわった、ソムリエ厳選の極上セレクション。月々2,980円から、入手が困難な全国の極上日本酒を楽しめる特別なプランです。今だけ、送料ずっと無料。安心の全額返金保証付き。
@@ -79,14 +52,14 @@
 
             <div class="flex justify-start mb4">
               <a href="/subscribe" class="btn raise mr2">お試しセットを購入する</a>
-              <div id="modal2">
-                <div id="show-modal" @click="showModal = true" class="btn black pointer" style="box-shadow:inset 0 0 0 2px #000">▷ 内容を動画で見る</div>
+              <div id="modal1">
+                <div id="show-modal" @click="showModal = true" class="btn black pointer" style="box-shadow:inset 0 0 0 2px #000">▷ 動画で内容を見る</div>
                 <!-- use the modal component, pass in the prop -->
                 <modal v-if="showModal" @close="showModal = false">
-                  <h3 slot="header" class="b mb3 white"><span class="f6">人気YouTuberさんにご紹介いただきました！</span><br>魅力がたくさん詰まったsaketakuをぜひご覧ください</h3>
                   <div slot="body">
+                    <h3 class="b mb3 white"><span class="f6">人気YouTuberさんも高評価！</span><br>巷で話題のsaketakuの魅力をぜひご覧ください！</h3>
                     <div class="youtube relative aspect-ratio aspect-ratio--16x9" style='height:0;'>
-                      <iframe class="absolute absolute--fill"  width="100%" height="100%" src="https://www.youtube.com/embed/OJXtDEPSRck?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      <iframe class="absolute absolute--fill"  width="100%" height="100%" src="https://www.youtube.com/embed/jGVqpL7kdJk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
                 </modal>

@@ -1,0 +1,56 @@
+<!-- Youtube -->
+<script type="text/x-template" id="modal">
+  <transition name="modal">
+
+    <div class="fixed z-999 absolute--fill flex items-center content-center modal-mask">
+
+        <div class="modal-container mw7 center tc w-100">
+
+          <div class="modal-body mb3">
+            <slot name="body">
+              default body
+            </slot>
+          </div>
+
+          <div class="modal-footer">
+            <slot name="footer">
+              <div class="white b dib pb1 pointer bb bw1 modal-default-button" @click="$emit('close')">
+                閉じる
+              </div>
+            </slot>
+          </div>
+        </div>
+      </div>
+
+  </transition>
+</script>
+
+
+<div id="modal3">
+  <div id="show-modal" @click="showModal = true" class="bg-primary white b tc pv2 pointer">ここをクリックして500円OFFクーポンをゲット</div>
+  
+  <!-- use the modal component, pass in the prop -->
+  <modal v-if="showModal" @close="showModal = false">
+    <div slot="body">
+      <div class="mw6 center bg-white pb3 overflow-hidden br1">
+        <div class="mb3">
+          <img src="/img/home/problem/002-large.jpg" alt="">
+          <h3 class="mb2 mt2">
+            <span class="f6 b db">＼ 今だけ有効な、お試し用クーポン発行中 ／</span>
+            <span class="f6 b">このチャンスに</span>
+            <span class="f2 b lh-solid">500</span><span class="f6 b ">円OFFクーポンをゲット!</span>
+          </h3>
+          <p class="f6 grey-3">saketakuのメルマガに登録して、500円OFFクーポンを手に入れよう</p>
+        </div>
+        <div class="ph3">
+          <fieldset>
+            <input type="email" placeholder="メールアドレス" class="mb3 tc w-100">
+            <button class="btn bg-primary white">登録してクーポンGET</button>
+          </fieldset>
+        </div>
+
+      </div>
+    </div>
+  </modal>
+
+</div>

@@ -1,7 +1,7 @@
 import Vue from "vue";
 
 Vue.component('modal', {
-  template: '#modal-template'
+  template: '#modal'
 })
 
 const modal1 = new Vue({
@@ -14,6 +14,14 @@ const modal1 = new Vue({
 
 const modal2 = new Vue({
   el: '#modal2',
+  delimiters: ["((","))"],
+  data: { 
+    showModal: false,
+  }
+})
+
+const modal3 = new Vue({
+  el: '#modal3',
   delimiters: ["((","))"],
   data: { 
     showModal: false,
