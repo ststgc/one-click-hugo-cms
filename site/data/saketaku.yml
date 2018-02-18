@@ -4,7 +4,7 @@ problem:
   image: "/img/home/problem/002"
 
 steps:
-  heading: "3つのステップで<br>美味しい日本酒“だけ”お届けします"
+  heading: "3つのステップで<br>美味しい日本酒をお届けします"
   text: "<p>地方の小さな酒蔵が生み出す、極少量の芸術品。</p><p>そんな極上日本酒の存在に、<br>一人でも多くの方に気づいてもらいたい。</p><p>お届けする日本酒はすべて<i class='b primary'>専門家による厳格なプロセス</i>を通るので、<i class='b primary'>美味しい日本酒「だけ」</i>を自信を持ってお届けできます。</p>"
   items:
     - image: '/img/home/steps/001'
