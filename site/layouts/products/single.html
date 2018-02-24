@@ -2,36 +2,36 @@
 
 <div class="bb b--grey-2">
   <div class="ph3 pt3 pb4 center mw9">
-    <div class="flex flex-column flex-row-l mhn2-l">
+    <div class="flex flex-column flex-row-l mhn2-l overflow-hidden">
       <div class="f6 w-100 w30-l order-last order-0-l">
         <div class="ph2-l">
           <div class="bt b--grey-2 bw1 pt2">
             <h3 class="f6 b lh-title serif mb2 mb3-ns-l grey-3">
               初めての方でも安心のお試しシステム
             </h3>
-            <div class="flex flex-column-l mb3 flex-wrap">
+            <!-- <div class="flex flex-column-l mb3 flex-wrap"> -->
               {{ range $.Site.Data.saketaku.trial.items }}
-              <div class="w-33 w-100-l">
+              <div class="w-100 mb3">
                 <div class="blur-up lazyload aspect-ratio aspect-ratio--16x9 cover mb3" style="background-image: url({{.image}}-lqip.jpg)" data-bg="{{.image}}.jpg"></div>
               </div>
               {{ end }}
-            </div>
+            <!-- </div> -->
           </div>
 
         </div>
       </div>
-      <div class="w-100 order-2 order-2-l">
-        <div class="mw9 center ph2 overflow-x-scroll overflow-x-auto-l relative mb5">
-          <div class="flex flex-column-l w-100">
-            {{ range $.Site.Data.saketaku.table.items }}
-              <div class="w-100-l w5">
-                <div class="blur-up lazyload aspect-ratio aspect-ratio--1x1 cover mb2" style="background-image: url({{.image}}-lqip.jpg)" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-medium.jpg [--medium] | {{.image}}-large.jpg"></div>
+      <div class="w-100 center overflow-x-scroll relative order-0 order-2-l mb3">
+        <div class="flex flex-column-l w-100 ph2-l">
+          {{ range $.Site.Data.saketaku.table.items }}
+            <div class="mr3 mb2-l">
+              <div class="w-100-l db w5">
+                <div class="blur-up lazyload aspect-ratio aspect-ratio--1x1 cover" style="background-image: url({{.image}}-lqip.jpg)" data-bgset="{{.image}}-small.jpg [--small] | {{.image}}-medium.jpg [--medium] | {{.image}}-large.jpg"></div>
               </div>
-            {{ end }}
-          </div>
+            </div>
+          {{ end }}
         </div>
       </div>
-      <div class="f6 w-100 w50-l order-0 order-last-l">
+      <div class="f6 w-100 w50-l order-1 order-last-l">
         <div class="ph2-l">
           <div class="">
             <h2 class="f4 b lh-title serif mb2">
