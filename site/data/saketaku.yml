@@ -252,11 +252,11 @@ amb:
     text: "アンバサダー制度について問い合わせる"
     url: "mailto:hi@saketaku.com"
   items:
-    - heading: "すごい楽しいです、saketaku。プロの方が書いているチェックシートを見ながら、想像を膨らましながら飲めるっていうのは、これは新しい日本酒の飲み方ではないでしょうか。あなたが初めて飲む銘柄の日本酒を飲みながら、初めて食べるツマミ、これはsaketakuならではと思います。"
-      tagline: "家族をメインとした動画で人気の、"
-      author: "ケニチ"
-      url: "https://www.youtube.com/watch?v=jGVqpL7kdJk"
-      image: "/img/home/amb/001.jpg"
+    - heading: "知らない日本酒との出会いがいっぱい。酒屋さんに行き、今のオススメは？と聞くと、詳しい店主が酒蔵の拘りやうんちくを話し出す、それ信じて買ってみる。そんなセレンディピティな出会い込で、日本酒を宅配してくれるsaketaku。届いた日本酒で、ホームパーティーを開催したくなります。"
+      tagline: "新事業創出支援「boundary spanner,inc」代表の"
+      author: "山田浩司"
+      url: "https://twitter.com/kojiyamada"
+      image: "/img/home/amb/006.jpg"
     - heading: "saketakuは日本酒を定期便で毎月届けてくれるサービスなんだけど、日本酒好きだし、いつかお酒を飲める旦那さんができたら月1で料理つくって日本酒パーティしたい・・・！！！"
       tagline: "自撮り女子として有名な"
       author: "りょかち"
@@ -272,7 +272,11 @@ amb:
       author: "卯月りん"
       url: "http://www.yoidorekomachi.com/entry/saketaku"
       image: "/img/home/amb/005.jpg"
-      
+    - heading: "すごい楽しいです、saketaku。プロの方が書いているチェックシートを見ながら、想像を膨らましながら飲めるっていうのは、これは新しい日本酒の飲み方ではないでしょうか。あなたが初めて飲む銘柄の日本酒を飲みながら、初めて食べるツマミ、これはsaketakuならではと思います。"
+      tagline: "家族をメインとした動画で人気の、"
+      author: "ケニチ"
+      url: "https://www.youtube.com/watch?v=jGVqpL7kdJk"
+      image: "/img/home/amb/001.jpg"
 
 
 news:
