@@ -9,13 +9,11 @@
             <h3 class="f6 b lh-title serif mb2 mb3-ns-l grey-3">
               初めての方でも安心のお試しシステム
             </h3>
-            <!-- <div class="flex flex-column-l mb3 flex-wrap"> -->
-              {{ range $.Site.Data.saketaku.trial.items }}
-              <div class="w-100 mb3">
-                <div class="blur-up lazyload aspect-ratio aspect-ratio--16x9 cover mb3" style="background-image: url({{.image}}-lqip.jpg)" data-bg="{{.image}}.jpg"></div>
-              </div>
-              {{ end }}
-            <!-- </div> -->
+            {{ range $.Site.Data.saketaku.trial.items }}
+            <div class="w-100 mb3">
+              <div class="blur-up lazyload aspect-ratio aspect-ratio--16x9 cover mb3" style="background-image: url({{.image}}-lqip.jpg)" data-bg="{{.image}}.jpg"></div>
+            </div>
+            {{ end }}
           </div>
 
         </div>
