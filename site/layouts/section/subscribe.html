@@ -152,7 +152,7 @@
                   <h3 class="b f5 lh-title mb2 ">(( choise.heading ))</h3>
                 </div>
                 <ul class="w-100">
-                  <li class='f6 bb b--grey-2 pv2 lh-solid'>
+                  <li class='f6 bb b--grey-2 b--dashed pv2 lh-solid'>
                     <span style="font-size:0.75rem">初回</span>
                     <span class="b f4 mh1">
                       (( choise.product.price.first | moneyDelimiter ))
@@ -160,7 +160,7 @@
                     <span style="font-size:0.75rem;">円（税抜）</span>
                   </li>
                   <li v-if="choise.product.price.second"
-                      class='f6 bb b--grey-2 pv2 lh-solid'>
+                      class='f6 bb b--grey-2 b--dashed pv2 lh-solid'>
                     <span style="font-size:0.75rem;">2回目</span>
                     <span class="b f5 mh1">(( choise.product.price.second | moneyDelimiter ))</span>
                     <span style="font-size:0.75rem;">円（税抜）</span>
@@ -176,7 +176,7 @@
                   <!-- 12回分お届け総額を基本として考える -->
                   <!-- 6ヶ月プラン or 12ヶ月プラン -->
                   <li v-if='choise.product.price.second === null'
-                      class='f6 bt b--grey-2 pv2 lh-solid'>
+                      class='f6 bt b--grey-2 b--dashed pv2 lh-solid'>
                     <span style="font-size:0.75rem;">お届け1回分</span>
                     <span class="b f5 mh1">
 
