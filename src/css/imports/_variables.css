@@ -4,11 +4,11 @@
 	--highlight: rgba(254, 213, 198, 1);
 	--white: rgba(255, 255, 255, 1);
 	--off-white: rgba(255, 253, 252, 1);
-	--grey-1: rgba(245, 243, 242, 1);
-	--grey-2: rgba(235, 231, 230, 1);
-	--grey-3: rgba(89, 87, 86, 1);
-	--grey-4: rgba(66, 64, 64, 1);
-	--black: rgba(43, 37, 35, 1);
+	--grey-1: rgba(237, 237, 236, 1);
+	--grey-2: rgba(175, 176, 173, 1);
+	--grey-3: rgba(90, 93, 87, 1);
+	--grey-4: rgba(20, 27, 0, 1);
+	--black: rgba(6, 9, 0, 1);
 
 	/* Typography */
 	--font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
