@@ -282,6 +282,10 @@ amb:
 news:
   heading: "SNSでも話題沸騰中！<br>様々なメディアで<br>今話題のサービスです"
   text: "TwitterやInstagramなど、各種SNSでもsaketakuは話題です。ぜひ「#saketaku」と検索してみてください。素敵な日本酒話がたくさん見つかります。きっとあなたも日本酒を飲みたくなるはず。"
+  items:
+    - image: "/img/home/product/base/001"
+      heading: "1. ソムリエ厳選の極上日本酒"
+      text: "日本酒のソムリエが「美味しさ」と「希少性」を基準に厳選した極上の日本酒（720ml）"
 
 
 
@@ -365,7 +369,7 @@ help:
   text: "私たちは、saketakuご利用前の不安をできる限り解消したいと思っています。ぜひ些細な事でも構いませんので、以下よりお気軽にご連絡いただけると嬉しいです。"
   items:
     - heading: "よくある質問"
-      text: "<p>お客さまから寄せられる「よくある質問」をまとめました。こちらで解消されない問題は、ぜひスタッフまで直接ご連絡下さい。</p><p><a href='//support.saketaku.com' class='b'>よくある質問をみる</a></p>"
+      text: "<p>お客さまから寄せられる「よくある質問」をまとめました。こちらで解消されない問題は、ぜひスタッフまで直接ご連絡下さい。</p><p><a href='//support.saketaku.com' class='b' target=_blank>よくある質問をみる</a></p>"
     - heading: "メールで問い合わせる"
       text: "<p>メールでの対応は24時間365日受け付けています。スタッフが常に対応しておりますので、お気軽にご連絡ください。</p><p><a href='mailto:hi@saketaku.com' class='b'>hi@saketaku.com</a> (24時間受け付け中)</p>"
     - heading: "SNSで問い合わせる"
