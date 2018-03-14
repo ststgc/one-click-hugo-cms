@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 {{ partial "home/hero" .Params.hero }}
+{{ partial "home/news" $.Site.Data.saketaku.news}}
 {{ partial "home/problem" $.Site.Data.saketaku.problem}}
 {{ partial "home/steps" $.Site.Data.saketaku.steps }}
 {{ partial "home/trial" $.Site.Data.saketaku.trial }}
@@ -23,7 +24,6 @@
 {{ partial "home/return" $.Site.Data.saketaku.return}}
 {{ partial "home/voice" $.Site.Data.saketaku.voice}}
 {{ partial "home/amb" $.Site.Data.saketaku.amb}}
-{{ partial "home/news" $.Site.Data.saketaku.news}}
 {{ partial "home/help" $.Site.Data.saketaku.help}}
 
 {{ end }}
