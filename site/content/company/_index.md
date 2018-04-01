@@ -21,7 +21,7 @@ date: 2017-01-04T15:04:10.000Z
 
 公式サイトはこちらからご覧になれます。
 
-https://weloveksake.com
+https://welovesake.com
 
 ### 企業名
 日本酒応援団株式会社

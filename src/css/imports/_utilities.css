@@ -50,6 +50,10 @@
 }
 
 
+.yotpo-nav-content {
+  word-break: break-all;
+}
+
 
 .modal-mask {
   background-color: rgba(0,0,0,.9);
