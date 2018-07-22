@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+{{ partial "jumbotron" (dict "title" .Title "subtitle" .Params.subtitle) }}
+
+<div class="mw7 center ph3 pt4">
+  <div class="bb b--grey-1 pb5 mb5">
+    <h3 class="lh-title f3 mb3 b">saketaku日本酒祭り</h3>
+    <div class="b" style="letter-spacing:.05em;">
+      {{ .Content }}
+    </div>
+  </div>
+
+</div>
+
+{{ end }}
